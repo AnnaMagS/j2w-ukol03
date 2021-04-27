@@ -11,9 +11,11 @@
 </head>
 <body>
 <div class="seznam">
+
     <a href="/detail">
-        <div class="vizitka">
-            <div class="jmeno">Dita (Přikrylová) Formánková</div>
+
+        <div th:each="vizitka, iterStat : ${vizitky}">
+            <div th:text="${vizitka.name}">Dita (Přikrylová) Formánková</div>
             <div class="firma">Czechitas z. s.</div>
             <div class="udaje">
                 <div class="adresa">
@@ -26,6 +28,7 @@
                     <div><i class="las la-globe"></i> <span>www.czechitas.cz</span></div>
                 </div>
             </div>
+
         </div>
     </a>
 

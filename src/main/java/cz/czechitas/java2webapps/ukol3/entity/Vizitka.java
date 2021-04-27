@@ -25,9 +25,7 @@ public class Vizitka {
     }
 
     public String getName() {
-        if (name == null){
-            throw new IllegalArgumentException();
-        }
+
         return name;
     }
 
