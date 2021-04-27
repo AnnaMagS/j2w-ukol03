@@ -42,16 +42,6 @@ public class  VizitkaController {
     return modelAndView;
   }
 
-
-  /*  @GetMapping("/")
-public String seznam() {
-    return "seznam";
-  }*/
-
-/*  @GetMapping("/detail")
-  public String detail() {
-    return "detail";
-  }*/
 }
 
 
