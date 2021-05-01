@@ -22,6 +22,7 @@ public class Vizitka {
         this.email = email;
         this.telefon = telefon;
         this.web = web;
+        this.celaAdresa = ulice + " " + PSC;
     }
 
     public String getName() { return name; }
@@ -55,7 +56,7 @@ public class Vizitka {
     }
 
     public String getCelaAdresa() {
-        return ulice + "\n" + PSC;
+        return ulice + " " + PSC;
     }
 
 
