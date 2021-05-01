@@ -14,13 +14,14 @@
 <div class="seznam">
 
 
-        <div th:each="vizitka, iterStat : ${vizitky}">
-            <div th:text="${vizitka.name}">Dita (Přikrylová) Formánková</div>
-            <div th:text="${vizitka.firma}">Czechitas z. s.</div>
+    <a href="/detail" th:each="vizitka, iterStat: ${vizitky}" th:href="@{/detail(id=${iterStat.index})}">
+        <div class="vizitka">
+            <div class="jmeno" th:text="${vizitka.name}">Dita (Přikrylová) Formánková</div>
+            <div class="firma" th:text="${vizitka.firma}">Czechitas z. s.</div>
             <div class="udaje">
                 <div class="adresa">
-                    <div th:text="${vizitka.ulice}"> </div>
-                    <div><span th:text="${vizitka.PSC}" >11000</span> Praha 1</div>
+                    <div th:text="${vizitka.ulice}">Příčná 1</div>
+                    <div><span th:text="${vizitka.PSC}" >11000</span></div>
                 </div>
                 <div class="kontakty">
                     <div><i class="las la-at"></i> <span th:text="${vizitka.email}">dita@czechitas.cs</span></div>
@@ -28,9 +29,8 @@
                     <div><i class="las la-globe"></i> <span th:text="${vizitka.web}">www.czechitas.cz</span></div>
                 </div>
             </div>
-            <a href="/vizitky/detail" th:href="@{/vizitky/detail(id=${iterStat.index})}"class="btn btn-primary">Detail</a>
         </div>
-
+    </a>
 
 </div>
 </body>

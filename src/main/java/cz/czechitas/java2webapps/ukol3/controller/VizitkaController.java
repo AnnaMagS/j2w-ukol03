@@ -13,7 +13,7 @@ import java.util.List;
  * Kontroler obsluhující zobrazování vizitek.
  */
 @Controller
-@RequestMapping("/vizitky")
+
 public class  VizitkaController {
   private final List<Vizitka> vizitky;
 
@@ -30,14 +30,14 @@ public class  VizitkaController {
 
   @GetMapping("/")
   public ModelAndView seznam() {
-    ModelAndView modelAndView = new ModelAndView("vizitky/seznam");
+    ModelAndView modelAndView = new ModelAndView("seznam");
     modelAndView.addObject("vizitky", vizitky);
     return modelAndView;
   }
 
   @GetMapping("/detail")
   public ModelAndView detail(int id) {
-    ModelAndView modelAndView = new ModelAndView("vizitky/detail");
+    ModelAndView modelAndView = new ModelAndView("detail");
     modelAndView.addObject("vizitka",vizitky.get(id));
     return modelAndView;
   }
