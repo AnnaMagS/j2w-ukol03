@@ -22,9 +22,9 @@ public class  VizitkaController {
             new Vizitka("Harry Potter","Bradavice","Příčná 1","11000 Praha 1",
                     "harry.potter@bradavice.wiz","111 222 333","https://cs.wikipedia.org/wiki/Harry_Potter"),
             new Vizitka("Frodo Pytlík","Společenstvo prstenu s.r.o","Šedivny 22","51801 Dobré" ,
-                    "","111 333 333",""),
+                    null,"111 333 333",null),
             new Vizitka("Anakin Skywalker","Rada Jedi","Strahovská 205","11801 Praha 1",
-                    "anakin.skywalker@jedi.uni","","")
+                    "anakin.skywalker@jedi.uni",null,null)
     );
   }
 
